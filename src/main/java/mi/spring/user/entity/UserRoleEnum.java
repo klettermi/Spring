@@ -1,4 +1,4 @@
-package mi.spring.user;
+package mi.spring.user.entity;
 
 public enum UserRoleEnum {
     USER(Authority.USER), // 사용자 권한
