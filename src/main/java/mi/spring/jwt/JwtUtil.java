@@ -5,14 +5,13 @@ import io.jsonwebtoken.security.SignatureException;
 import jakarta.annotation.PostConstruct;
 import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServletResponse;
-import mi.spring.user.UserRoleEnum;
+import mi.spring.user.entity.UserRoleEnum;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 import org.springframework.util.StringUtils;
 
-import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 import java.nio.charset.StandardCharsets;
 import java.security.Key;
@@ -59,7 +58,7 @@ public class JwtUtil {
     }
 
     // JWT Cookie에 저장
-    public void addJwtCookie(String token, HttpServletResponse res){
+    public void addJwtToCookie(String token, HttpServletResponse res){
         try{
             token = URLEncoder.encode(token, StandardCharsets.UTF_8).replaceAll("\\+" , "%20");
 
