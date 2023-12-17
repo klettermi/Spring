@@ -1,4 +1,4 @@
-package mi.spring.jwt;
+package mi.spring.security.jwt;
 
 import io.jsonwebtoken.*;
 import io.jsonwebtoken.security.SignatureException;

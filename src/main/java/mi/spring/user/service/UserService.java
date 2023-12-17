@@ -1,6 +1,6 @@
 package mi.spring.user.service;
 
-import mi.spring.jwt.JwtUtil;
+import mi.spring.security.jwt.JwtUtil;
 import mi.spring.user.dto.LoginRequestDto;
 import mi.spring.user.entity.User;
 import mi.spring.user.repository.UserRepository;
