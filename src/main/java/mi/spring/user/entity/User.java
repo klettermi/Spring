@@ -22,7 +22,7 @@ public class User {
     private String password;
 
     @Column(nullable = false, unique = true)
-    private String enmail;
+    private String email;
 
     @Column(nullable = false)
     @Enumerated(value = EnumType.STRING)
